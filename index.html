@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a52ad35794.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css" />
+  <title>Shortly | URL Shortening</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">
+        <img src="assets/favicon.png" alt="Shortly">
+        Shortly
+      </h1>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#shortener">Shorten</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="hero" class="hero">
+    <div class="container">
+      <h2>Welcome to Shortly</h2>
+      <p>Cut the clutter. Get your links shortened with style.</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="shortener" class="shortener">
+      <div class="container">
+        <form id="shortenForm" class="form">
+          <input type="url" id="linkInput" placeholder="Enter your URL here" required />
+          <button id="submitButton" type="submit">Shorten It!</button>
+        </form>
+        <p id="errorMessage" class="error"></p>
+      </div>
+    </section>
+
+    <section class="results">
+      <div class="container" id="linksContainer">
+        <!-- Shortened links will be dynamically inserted here -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Shortly. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
